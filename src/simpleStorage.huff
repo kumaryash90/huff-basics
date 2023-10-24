@@ -31,6 +31,7 @@
     dup1 __FUNC_SIG(setValue) eq setValue jumpi
     dup1 __FUNC_SIG(getValue) eq getValue jumpi
 
+    0x00 0x00 revert
 
     setValue:
         SET_VALUE()
@@ -38,5 +39,4 @@
     getValue: 
         GET_VALUE()
 
-    0x00 0x00 revert
 }
